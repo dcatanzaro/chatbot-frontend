@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Avenir-Light";
+    src: url("/static/fonts/AvenirLTStd-Light.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url("/static/fonts/AvenirLTStd-Roman.otf");
+}
+
+body {
+    font-family: "Avenir-Roman";
+    margin: 0;
+}
+
+header {
+    background: white;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+
+    span {
+        vertical-align: top;
+        font-size: 16px;
+        color: #3d3c3f;
+        margin-top: 17px;
+        display: inline-block;
+        margin-left: 17px;
+
+        &:before {
+            background-color: #3196e6;
+            background-image: linear-gradient(
+                to right bottom,
+                #539fe0,
+                #0f8ded
+            );
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 8px;
+            height: 8px;
+            line-height: 8px;
+            margin-right: 5px;
+            border-radius: 5px;
+            vertical-align: 0.1em;
+        }
+    }
+
+    svg {
+        color: gray;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 60px;
+    overflow-y: scroll;
+    padding-top: 60px;
+
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    li {
+        width: 80%;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 16px;
+            padding: 15px;
+            border-radius: 10px;
+            display: block;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .messageUser {
+        float: right;
+
+        span {
+            background-color: #0d8bcd;
+            color: #fefdff;
+        }
+    }
+
+    .messageAdmin {
+        display: table;
+
+        svg {
+            margin-right: 5px;
+            font-size: 30px;
+            vertical-align: top;
+            display: table-cell !important;
+        }
+
+        span {
+            background-color: #f1f3f5;
+            color: #09080b;
+            display: table-cell;
+            width: 100%;
+        }
+    }
+}
+
+.inputChat {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: #fff;
+
+    input {
+        font-family: "Avenir-Roman";
+        padding: 12px 8px;
+        font-size: 16px;
+        width: 100%;
+        background: transparent;
+        border: 0;
+        padding-top: 17px;
+        height: 50px;
+        box-sizing: border-box;
+        min-height: 50px;
+        max-height: 146px;
+        padding-left: 15px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    svg {
+        width: 50px;
+        height: 26px;
+        padding: 12px 5px;
+        color: #449fe0;
+    }
+}

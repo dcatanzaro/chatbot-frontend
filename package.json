@@ -19,7 +19,7 @@
         "@zeit/next-sass": "^1.0.1",
         "compression": "^1.7.4",
         "express": "^4.17.1",
-        "next": "^9.1.2",
+        "next": "^11.1.0",
         "node-sass": "^4.13.0",
         "react": "^16.11.0",
         "react-dom": "^16.11.0",
